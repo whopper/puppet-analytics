@@ -91,8 +91,7 @@ def module_page(author, module):
     ys = buckets
     xs = []
     for x in range(bucket_number):
-        xs.append(base + ( delta * x))
-         
+        xs.append(int((base + ( delta * x)).strftime('%s')))
 
     #from pdb import set_trace; set_trace();
 
